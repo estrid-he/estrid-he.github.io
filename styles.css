@@ -889,9 +889,37 @@ h1, h2, h3, p { overflow-wrap: break-word; }
   .projects-header h1 { font-size: 1.7rem; }
   .hero { grid-template-columns: 1fr; gap: 3rem; padding: 3.5rem 0 2rem; }
   .hero h1 { font-size: 3.4rem; }
-  .home-hero { grid-template-columns: 1fr; gap: 2.5rem; padding: 3rem 0 3.5rem; }
-  .home-name-block h1 { font-size: 1.9rem; }
-  .home-profile { width: clamp(180px, 52vw, 280px); max-width: 100%; justify-self: start; }
+  .home-hero {
+    grid-template-columns: clamp(112px, 34vw, 150px) minmax(0, 1fr);
+    grid-template-areas:
+      "photo name"
+      "photo position"
+      "research research"
+      "actions actions"
+      "themes themes";
+    column-gap: 1.25rem;
+    row-gap: 1.25rem;
+    padding: 2.25rem 0 3.5rem;
+  }
+  .home-identity { display: contents; }
+  .home-name-block { grid-area: name; align-self: end; }
+  .home-name-block h1 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    font-size: 1.75rem;
+  }
+  .alternate-name { font-size: 0.9rem; line-height: 1.35; white-space: normal; }
+  .home-position { grid-area: position; align-self: start; }
+  .home-research { grid-area: research; }
+  .profile-actions { grid-area: actions; }
+  .home-profile { display: contents; }
+  .home-photo {
+    grid-area: photo;
+    width: 100%;
+    align-self: center;
+  }
+  .home-themes { grid-area: themes; margin-top: 0.25rem; }
   .home-research p { text-align: left; }
   .home-overview { grid-template-columns: 1fr; gap: 3rem; padding-top: 3rem; }
   .profile-panel { max-width: 420px; }
