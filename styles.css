@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap');
 
 :root {
-  --bg: #fbfbfa;
+  --bg: #f8fafc;
   --surface: #ffffff;
-  --text: #202124;
-  --muted: #64676c;
-  --faint: #8b8e93;
-  --line: #dededb;
-  --accent: #315f78;
-  --accent-soft: #eef4f6;
+  --text: #17202a;
+  --muted: #52606d;
+  --faint: #627480;
+  --line: #d8e0e8;
+  --accent: #176b78;
+  --accent-soft: #eaf6f7;
   --max-width: 1060px;
   --content-width: var(--max-width);
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -16,14 +16,14 @@
 }
 
 html[data-theme="dark"] {
-  --bg: #171819;
-  --surface: #1d1f20;
-  --text: #ececea;
-  --muted: #b0b2b3;
-  --faint: #85888a;
-  --line: #363839;
-  --accent: #8fc0d5;
-  --accent-soft: #243238;
+  --bg: #0f1419;
+  --surface: #151c22;
+  --text: #f1f5f7;
+  --muted: #aebbc4;
+  --faint: #7f919d;
+  --line: #2d3a43;
+  --accent: #66c2c8;
+  --accent-soft: #162b30;
 }
 
 * { box-sizing: border-box; }
@@ -244,7 +244,7 @@ h1, h2, h3, p { overflow-wrap: break-word; }
 .profile-panel { padding: 0; }
 .profile-head { display: flex; flex-direction: column; gap: 1rem; }
 .photo-frame { width: 100%; margin: 0; }
-.profile-photo { width: 100%; border-radius: 2px; filter: saturate(0.82); }
+.profile-photo { width: 100%; border-radius: 2px; filter: saturate(0.98); }
 
 .tag-list, .timeline-tags, .item-tags {
   display: flex;
@@ -296,6 +296,8 @@ h1, h2, h3, p { overflow-wrap: break-word; }
   letter-spacing: 0;
   white-space: nowrap;
 }
+
+.alternate-name-text { font-size: 1.1em; }
 
 .home-position {
   display: flex;
@@ -367,7 +369,7 @@ h1, h2, h3, p { overflow-wrap: break-word; }
   aspect-ratio: 1 / 1.02;
   border-radius: 2px;
   object-fit: cover;
-  filter: saturate(0.86);
+  filter: saturate(0.98);
 }
 .home-themes { margin-top: 1.5rem; }
 
@@ -385,6 +387,7 @@ h1, h2, h3, p { overflow-wrap: break-word; }
 .home-themes li {
   padding: 0.36rem 0.64rem;
   border: 1px solid var(--line);
+  border-left: 2px solid var(--accent);
   border-radius: 2px;
   background: var(--surface);
   color: var(--muted);
