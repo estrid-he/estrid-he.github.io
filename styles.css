@@ -519,6 +519,24 @@ h1, h2, h3, p { overflow-wrap: break-word; }
 
 .news-content { min-width: 0; }
 
+.news-track {
+  margin: 0.85rem 0 0.3rem;
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.news-paper-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.55;
+  overflow-wrap: break-word;
+}
+
+.news-paper-list li + li { margin-top: 0.3rem; }
+
 .news-content h3 {
   margin: 0;
   font-family: var(--sans);
