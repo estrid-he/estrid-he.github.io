@@ -1,5 +1,30 @@
 (function () {
   const records = {
+    "Balancing Factoid Retrieval and Candidate Recommendation to Identify Toponym Origins in Gazetteers": {
+      type: "article", key: "hordevo2026balancing", authors: "Horde-Vo, Alexis and Duckham, Matt and He, Estrid and Ranamuka, Nayomi Geethanjali and Benli, Rafe",
+      venueField: "journal", venue: "International Journal of Geographical Information Science", year: "2026",
+      doi: "10.1080/13658816.2026.2733533",
+      pdf: "assets/papers/balancing-toponym-origins.pdf",
+      code: "https://doi.org/10.25439/rmt.30073789"
+    },
+    "GraphProfiler: Source-Linked Sensitive Attribute Inference via Personal Knowledge Graphs": {
+      type: "inproceedings", key: "khan2026graphprofiler", authors: "Khan, Ahmed Sohair and He, Estrid and Ma, Chenglong and Wachowicz, Monica and Naghizade, Elham",
+      venueField: "booktitle", venue: "Conference on Empirical Methods in Natural Language Processing (EMNLP), Main Conference", year: "2026",
+      pdf: "assets/papers/graphprofiler.pdf",
+      code: "https://github.com/ahmedsohair/GraphProfiler"
+    },
+    "Twin Worlds: Equivariance-Based Abstention for Evidence-Grounded Reasoning": {
+      type: "inproceedings", key: "nguyen2026twin", authors: "Nguyen, Vy and Xu, Ziqi and Chan, Jeffrey and He, Estrid and Xia, Feng and Luo, Renqiang and Cambria, Erik and Zhang, Xiuzhen",
+      venueField: "booktitle", venue: "Conference on Empirical Methods in Natural Language Processing (EMNLP), Main Conference", year: "2026",
+      pdf: "assets/papers/twin-worlds.pdf",
+      code: "https://github.com/xiuzhenzhang/Twin-Worlds"
+    },
+    "Graph-Guided Selective Unlearning for Language Models: Controlling Support Routes Beyond Forget Seeds": {
+      type: "inproceedings", key: "khan2026graphguided", authors: "Khan, Waqas and Sarwar, Tabinda and Cong, Jingyue and Yi, Xun and He, Estrid",
+      venueField: "booktitle", venue: "Conference on Empirical Methods in Natural Language Processing (EMNLP), Industry Track", year: "2026",
+      pdf: "assets/papers/graph-guided-selective-unlearning.pdf",
+      code: "https://anonymous.4open.science/r/graphSU-35B4"
+    },
     "One Pass, Any Order: Position-Invariant Listwise Reranking for LLM-Based Recommendation": {
       type: "inproceedings", key: "bito2026one", authors: "Bito, Ethan and Ren, Yongli and He, Estrid",
       venueField: "booktitle", venue: "49th International ACM SIGIR Conference on Research and Development in Information Retrieval", year: "2026",
@@ -123,7 +148,7 @@
       `  author = {${record.authors}},\n` +
       `  title = {${title}},\n` +
       `  ${record.venueField} = {${record.venue}},\n` +
-      `  year = {${record.year}}\n` +
+      `  year = {${record.year}}${record.doi ? `,\n  doi = {${record.doi}}` : ""}\n` +
       `}`;
   }
 
