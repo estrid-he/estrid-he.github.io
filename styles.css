@@ -571,7 +571,8 @@ h1, h2, h3, p { overflow-wrap: break-word; }
 
 .news-actions a:hover { color: var(--accent); }
 
-.project-item[id] { scroll-margin-top: 6rem; }
+.project-item[id],
+.pub-item[id] { scroll-margin-top: 6rem; }
 
 /* Publications */
 .publications-header .page-title { max-width: 730px; }

@@ -23,7 +23,7 @@
       type: "inproceedings", key: "khan2026graphguided", authors: "Khan, Waqas and Sarwar, Tabinda and Cong, Jingyue and Yi, Xun and He, Estrid",
       venueField: "booktitle", venue: "Conference on Empirical Methods in Natural Language Processing (EMNLP), Industry Track", year: "2026",
       pdf: "assets/papers/graph-guided-selective-unlearning.pdf",
-      code: "https://anonymous.4open.science/r/graphSU-35B4"
+      code: "https://github.com/mwaqaskh/Graph-Guided-Selective-Unlearning-for-Language-Models"
     },
     "One Pass, Any Order: Position-Invariant Listwise Reranking for LLM-Based Recommendation": {
       type: "inproceedings", key: "bito2026one", authors: "Bito, Ethan and Ren, Yongli and He, Estrid",
